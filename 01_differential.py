@@ -178,9 +178,9 @@ def recover_key():
         guessed_k0 = p0 ^ good_p0
         guessed_k1 = sbox[p0] ^ good_c0
         if validate_key(guessed_k0, guessed_k1):
-            print("Recovered key: %s %s" % (guessed_k0, guessed_k1))
+            print("Recovered key --> %s %s" % (guessed_k0, guessed_k1))
         else:
-            print("               %s %s" % (guessed_k0, guessed_k1))
+            print("                  %s %s" % (guessed_k0, guessed_k1))
 
 
 recover_key()
